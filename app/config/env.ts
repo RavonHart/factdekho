@@ -12,10 +12,7 @@ const getEnvVar = (key: string): string => {
 }
 
 export const config = {
-  openai: {
-    apiKey: getEnvVar('OPENAI_API_KEY'),
-  },
-  gemini: {
-    apiKey: getEnvVar('GEMINI_API_KEY'),
+  groq: {
+    apiKey: getEnvVar('GROQ_API_KEY'),
   },
 } as const 
